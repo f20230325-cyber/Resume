@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape ARIN KAPIL SAMANT} \\ \vspace{2pt}
+    \small 
+    8828463358  $|$
+    \href{mailto:samantarin18@gmail.com}{\textcolor{blue}{\textbf{samantarin18@gmail.com}}}  $|$
+    \href{https://www.linkedin.com/in/arin-samant-7a1b31289}{\textcolor{blue}{\textbf{LinkedIn}}}  $|$
+    \href{https://github.com/arinsamant}{\textcolor{blue}{\textbf{GitHub}}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{BITS Pilani, Pilani Campus}}{Pilani, India}
+      {{B.E. (Hons.) Electrical \& Electronics Engineering (CGPA: 8.35)}}{May 2027}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{EDA Tools \& Simulators:}{ Cadence Virtuoso, LTSpice} \\
+     \textbf{Programming:}{ LabVIEW, C, MATLAB, Verilog, Python} \\
+     \textbf{Coursework:}{ Digital Design, Signals and Systems, Microelectronic Circuits, Electronic Devices, Analog and Digital VLSI Design} \\
+     \textbf{Lab Experience:}{ Wafer-level testing, Keysight Source Measure Units (SMUs), Summit 12K Prober}
+    }}
+ \end{itemize}
+\vspace{-5pt} % Optional: reduces space after the section
+
+
+%-----------INTERNSHIPS-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{SEMI-CONDUCTOR LABORATORY (SCL)}}{Mohali, India}
+      {{VLSI Testing \& Automation Intern}}{May 2025 \textbf{-} Jul 2025}
+      
+      \resumeItemListStart
+        \resumeItem{Selected as the only intern among \textbf{1000+ students} to work at India’s sole semiconductor fab, contributing to \textbf{GaN device R\&D}.}
+        \resumeItem{Built a \textbf{LabVIEW-based test framework} for GaN-FET and PVM characterization using {Summit 12K prober} and {Keysight SMUs}.}
+        \resumeItem{Improved test efficiency by implementing \textbf{5+ advanced automation features} including pulse testing, hysteresis analysis, SMU synchronization, and selective data logging, validating \textbf{50+ GaN devices} through wafer-level testing.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Design of Analog In-Memory Computing Architecture using DRAM}}{Aug 2025 \textbf{-} Present}
+      \resumeItemListStart
+        \resumeItem{Designed a \textbf{DRAM-based in-memory computing architecture}, integrating {precharge}, {sense amplifier}, and {write driver} circuits using \textbf{Cadence Virtuoso}.}
+        \resumeItem{Implemented a \textbf{1-bit Full Adder} using the \textbf{Majority Logic Technique}, validating its performance for low-power arithmetic operations.}
+        \resumeItem{Explored advanced {DRAM design techniques} focusing on {power}, {speed}, and {area trade-offs}, achieving circuit-level validation for {analog in-memory computing applications}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions of Responsibility}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Coordinator}}{Aug 2025 \textbf{-} Present}
+      {{National Service Scheme (NSS)}}{Pilani, India}
+      \resumeItemListStart
+        \resumeItem{\textbf{Mentor} {2nd-year members} with positions of responsibility to ensure NSS activities run smoothly.}
+        \resumeItem{Communicate with \textbf{faculty-in-charge} and coordinate across teams and partner organizations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Executive Committee Member}}{Jul 2024 \textbf{-} Apr 2025}
+      {{National Service Scheme (NSS)}}{Pilani, India}
+      \resumeItemListStart
+        \resumeItem{Planned and ran \textbf{50+ weekly computer literacy drives}, managing volunteer teams across batches.}
+        \resumeItem{Conducted exams in \textbf{10+ schools} for \textbf{300+ students} in underserved communities.}
+        \resumeItem{Organized a \textbf{blood donation camp (669 donations)} with the {Indian Red Cross Society}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Volunteer (Education)}}{Aug 2023 \textbf{-} Jul 2024}
+      {{National Service Scheme (NSS)}}{Pilani, India}
+      \resumeItemListStart
+        \resumeItem{Ran \textbf{computer literacy sessions} for underprivileged students covering digital skills, MS Office, and internet use.}
+        \resumeItem{Prepared learning materials and guided participants to use technology for education and work.}
+        \resumeItem{Tutored \textbf{2 candidates} for the \textbf{CCC exam}, helping them get entry-level jobs.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------TEST SCORES-----------
+\section{Test Scores}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{JEE Mains 2023:} 99.42 Percentile 
+    }}
+ \end{itemize}
+ \vspace{-5pt}
+
+%-------------------------------------------
+\end{document}
